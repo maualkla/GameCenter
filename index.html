@@ -7,6 +7,7 @@
 		body
 		{
 			background-color: #33334d;
+			font-family: sans-serif;
 		}
 		.container-head
 		{
@@ -30,7 +31,11 @@
 		}
 		.container-body
 		{
-			
+			padding-top: 80px;
+		}
+		.superior
+		{
+
 		}
 		.opcion
 		{
@@ -45,6 +50,11 @@
 			
 		}
 
+		#label
+		{
+			color: yellow;
+
+		}
 		video
 		{
 			height: 300px; width: 700px;
@@ -54,12 +64,12 @@
 		{
 			border: none; border: solid 1px #0d0d0d; border-radius: 3px;
 			opacity: 1;
-			background-color:  #1f1f2e;
+			background: none;
 			width: 60%;
-			font-size: 30px;
+			font-size: 30px; color: white;
 			margin-top: 6px; margin-left: 15%;
 			cursor: default;
-
+			padding: 2px;padding-left: 5px;
 		}
 		.button
 		{
@@ -81,10 +91,10 @@
 			<div class="container-head">
 				<div class="top-bar" onclick="">
 					<div>
-						<img id="title" src="white-bitmap.png">
+						<img id="title" src="white-bitmap.png"> <b id="label">Hello!</b>
 					</div>
 					<div class="middle">
-						 <input type="text" class="browser" name="" >
+						 <input type="text" class="browser" name="" placeholder="Search here">
 					</div>
 					<div class="sesion">
 						<button class="button" onClick="alert('Sesion cerrada'); document.getElementsByClassName('button')[0].innerHTML = 'Abrir Sesion';"> Close Sesion</button>
@@ -92,6 +102,9 @@
 				</div>
 			</div>
 			<div class="container-body">
+				<div class="superior">
+					Top today's games
+				</div>
 				<div class="opcion" onclick="window.location.href = 'Conecta5/4enRaya.html'">
 					<video muted loop id="" class="video" autoplay="autoplay" >
 						<source src="confetti.mp4" type="video/mp4" />
