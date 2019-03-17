@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title> GAME CENTER </title>
-	<link rel="shortcut icon" href="Assets/icon.png" />
+	<link rel="shortcut icon" href="bitmap.png" />
 	<style type="text/css">
 		body
 		{
@@ -11,6 +11,18 @@
 		.container-head
 		{
 			
+		}
+		.top-bar
+		{
+			display: grid; grid-template-rows: 1fr 5fr 1fr;
+			background-color: #131339;
+			position: fixed;
+			width: 110%; height: 10%; 
+			margin-top: -10px; margin-left: -10px;
+		}
+		#title
+		{
+			height: 60px;
 		}
 		.container-body
 		{
@@ -36,15 +48,19 @@
 	<body>
 		<div class="container">
 			<div class="container-head">
-				GAME CENTER
+				<div class="top-bar">
+					<img id="title" src="bitmap.png">
+				</div>
 			</div>
 			<div class="container-body">
 				<div class="opcion" onclick="window.location.href = 'Conecta5/4enRaya.html'">
-					
+					<video muted loop id="" class="video" autoplay="autoplay" >
+						<source src="confetti.mp4" type="video/mp4" />
+					</video>
 				</div>
 				<div class="opcion" onclick="window.location.href = 'Sudoku/sudoku.html'">
-					<video muted id="" class="video" autoplay="autoplay" >
-						<source src="party.mp4" type="video/mp4" />
+					<video muted loop id="" class="video" autoplay="autoplay" >
+						<source src="disco.mp4" type="video/mp4" />
 					</video>
 				</div>
 			</div>
