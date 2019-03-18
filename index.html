@@ -15,7 +15,7 @@
 		}
 		.top-bar
 		{
-			display: grid; grid-template-columns: 1fr 5fr 1fr;
+			display: grid; grid-template-columns: 2fr 5fr 1fr;
 			background-color: #131339;
 			position: fixed;
 			width: 99%; height: 8%; 
@@ -52,7 +52,7 @@
 
 		#label
 		{
-			color: yellow;
+			color: green;
 
 		}
 		video
@@ -67,7 +67,7 @@
 			background: none;
 			width: 60%;
 			font-size: 30px; color: white;
-			margin-top: 6px; margin-left: 15%;
+			margin-top: 6px; margin-left: 8%;
 			cursor: default;
 			padding: 2px;padding-left: 5px;
 		}
@@ -96,7 +96,7 @@
 			<div class="container-head">
 				<div class="top-bar" onclick="">
 					<div>
-						<img id="title" src="white-bitmap.png"> <b id="label">Hello!</b>
+						<img id="title" src="white-bitmap.png"> <b id="label">Happy St Patrics Day!</b>
 					</div>
 					<div class="middle">
 						 <input type="text" class="browser" name="" placeholder="Search here">
@@ -107,18 +107,20 @@
 				</div>
 			</div>
 			<div class="container-body">
-				<div class="superior">
+				<div class="titulo">
 					Top today's games
 				</div>
-				<div class="opcion" onclick="window.location.href = 'Conecta5/4enRaya.html'">
-					<video muted loop id="" class="video" autoplay="autoplay" >
-						<source src="confetti.mp4" type="video/mp4" />
-					</video>
-				</div>
-				<div class="opcion" onclick="window.location.href = 'Sudoku/sudoku.html'">
-					<video muted loop id="" class="video" autoplay="autoplay" >
-						<source src="disco.mp4" type="video/mp4" />
-					</video>
+				<div class="tarjetas">
+					<div class="card" onclick="window.location.href = 'Conecta5/4enRaya.html'">
+						<video muted loop id="" class="video" autoplay="autoplay" >
+							<source src="confetti.mp4" type="video/mp4" />
+						</video>
+					</div>
+					<div class="card" onclick="window.location.href = 'Sudoku/sudoku.html'">
+						<video muted loop id="" class="video" autoplay="autoplay" >
+							<source src="disco.mp4" type="video/mp4" />
+						</video>
+					</div>
 				</div>
 			</div>
 			<div class="container-footer">
