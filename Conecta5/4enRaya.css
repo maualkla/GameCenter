@@ -16,7 +16,7 @@ svg rect{
 {
 	display: grid; grid-template-columns: 1fr 4fr;
 	border: solid 1px orange;
-	margin-top: -10px;
+	margin-top: -10px; margin-bottom: -10px;
 	width: 100%;
 
 }
@@ -43,7 +43,7 @@ svg circle{
 }
 
 svg polygon{
-	fill: white;
+	fill: #EFF8FA;
 	stroke: gray;
 	stroke-width: 1;
 }
