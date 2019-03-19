@@ -2,8 +2,8 @@ console.log("Iniciando 4enRaya");
 window.onload = preparar;
 
 //Constantes
-const FILAS = 7;
-const COLS = 8;
+const FILAS = 7; // de 6 a 7
+const COLS = 8; // de 7 a 8
 const SVG_NS = "http://www.w3.org/2000/svg";
 const COLOR0 = "white";
 const COLOR_HUMANO = "blue";
