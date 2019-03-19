@@ -24,6 +24,26 @@
 			padding: 10px;
 			border-radius: 0px 0px 50px 50px;
 		}
+		.shows
+		{
+			animation-name: show;
+			animation-duration: 1s;
+		}
+		.hides
+		{
+			animation-name: hide;
+			animation-duration: 1s;
+		}
+		@keyframes show
+		{
+			from{ height: 8%; }
+			to{ height: 12%; }
+		}
+		@keyframes hide
+		{
+			from{ height: 12%; }
+			to{ height: 8%; }
+		}
 		#title
 		{
 			height: 45px; 
@@ -56,7 +76,7 @@
 
 		#label
 		{
-			color: green;
+			color: white;
 
 		}
 		video
@@ -96,17 +116,33 @@
 			background-color: #131339;
 			border: solid 2px white; 
 		}
+		.titulo
+		{
+			border: solid black 1px; border-radius: 5px;
+			background-color: #080612; 
+			color: #62635D;
+			padding: 20px;
+		}
 	</style>
 	<script type="text/javascript">
-		
+		function show()
+		{
+			document.getElementsByClassName("top-bar")[0].classList.remove("hides");
+			document.getElementsByClassName("top-bar")[0].classList.add("shows");
+		}
+		function hide()
+		{
+			document.getElementsByClassName("top-bar")[0].classList.remove("shows");
+			document.getElementsByClassName("top-bar")[0].classList.add("hides");
+		}
 	</script>
 </head>
 	<body>
 		<div class="container">
 			<div class="container-head">
-				<div class="top-bar" onclick="">
+				<div class="top-bar" onclick="" onmouseover="show()" onmouseleave="hide()">
 					<div>
-						<img id="title" src="white-bitmap.png"> <b id="label">Happy St Patrics Day!</b>
+						<img id="title" src="white-bitmap.png"> <b id="label">Hello buddy!</b>
 					</div>
 					<div class="middle">
 						 <input type="text" class="browser" name="" placeholder="Search here">
