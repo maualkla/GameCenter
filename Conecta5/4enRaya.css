@@ -4,9 +4,16 @@
 svg{
 }
 svg rect{
-	fill: brown;
-	stroke:black;
-	stroke-width:3;
+	fill: green;
+	stroke: green;
+	stroke-width:1;
+}
+
+.content
+{
+	margin: 10%;
+	border: red solid 1px;
+	text-align: center;
 }
 
 svg circle{

@@ -48,7 +48,6 @@ function preparar(){
 	r.setAttribute('ry', 20);
 	r.setAttribute('width', 700);
 	r.setAttribute('height', 615);
-	//r.setAttribute('fill', 'green'); // No funciona...
 	svg.appendChild(r);
 	
 	mostrarPuntos();
