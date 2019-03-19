@@ -16,29 +16,31 @@ svg rect{
 	fill: #51A63E;
 	stroke: #314037;
 	stroke-width:1;
+	opacity: .7;
 }
 .mega
 {
 	display: grid; grid-template-columns: 1fr 4fr;
-	border: solid 1px orange;
-	margin: 1%;
-	width: 98%;
+	margin: 1% 12.5%; 
+	width: 70%;
+	height: 90%;
 	font-family: sans-serif;
-
+	-webkit-box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.75);
+	box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.75);
 }
 .content
 {
 	margin: 0% 0%;
-	border: red solid 1px;
 	text-align: center;
 	background-color: #5B996A;
 }
 .top-page
 {
 	margin: 0% 0%;
-	border: yellow 1px solid;
 	text-align: center; color: #27A0C7;
 	background-color: #4C351E;
+
 }
 svg circle{
 	fill: white;
@@ -47,6 +49,7 @@ svg circle{
 	-webkit-box-shadow: 0px 0px 51px 4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 51px 4px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 51px 4px rgba(0,0,0,0.75);
+
 }
 
 svg polygon{
