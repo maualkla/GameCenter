@@ -2,6 +2,9 @@
 	text-align:center;
 }
 svg{
+	-webkit-box-shadow: 0px 0px 23px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 23px -6px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 23px -6px rgba(0,0,0,0.75);
 }
 svg rect{
 	fill: #51A63E;
@@ -10,25 +13,32 @@ svg rect{
 }
 .mega
 {
+	display: grid; grid-template-columns: 1fr 4fr;
+	border: solid 1px orange;
+	margin: 0px;
+	width: 100%;
 	
 }
 .content
 {
-	margin: 0% 10%;
+	margin: 0% 0%;
 	border: red solid 1px;
 	text-align: center;
 	background-color: #5B996A;
 }
 .top-page
 {
-	margin: 0% 10%;
+	margin: 0% 0%;
 	border: yellow 1px solid;
 	text-align: center;
 }
 svg circle{
 	fill: white;
-	stroke: black;
-	stroke-width: 3;
+	stroke: gray;
+	stroke-width: 1;
+	-webkit-box-shadow: 0px 0px 51px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 51px 4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 51px 4px rgba(0,0,0,0.75);
 }
 
 svg polygon{
