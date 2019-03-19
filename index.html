@@ -2,55 +2,171 @@
 <html>
 <head>
 	<title> GAME CENTER </title>
-	<link rel="shortcut icon" href="Assets/icon.png" />
+	<link rel="shortcut icon" href="bitmap.png" />
 	<style type="text/css">
 		body
 		{
-			background-color: #E0D2F1;
-			color: #3FA9F5; font-size: 10px; font-family: sans-serif; text-align: center;
+			background-color: #33334d;
+			font-family: sans-serif;
 		}
 		.container-head
 		{
-			font-size: 1000%; font-family: 'Barcade'; 
-			margin: 100px;
+			
+		}
+		.top-bar
+		{
+			display: grid; grid-template-columns: 2fr 5fr 1fr;
+			background-color: #131339;
+			position: fixed;
+			width: 99%; height: 8%; 
+			margin-top: -10px; margin-left: -10px;
+			opacity: .9; 
+			padding: 10px;
+			border-radius: 0px 0px 50px 50px;
+		}
+		.shows
+		{
+			animation-name: show;
+			animation-duration: 1s;
+		}
+		.hides
+		{
+			animation-name: hide;
+			animation-duration: 1s;
+		}
+		@keyframes show
+		{
+			from{ height: 8%; }
+			to{ height: 12%; }
+		}
+		@keyframes hide
+		{
+			from{ height: 12%; }
+			to{ height: 8%; }
+		}
+		#title
+		{
+			height: 45px; 
+			margin-left: 50px;
 		}
 		.container-body
 		{
-			display: grid; grid-template-columns: 1fr 1fr; 
+			padding-top: 80px;
+		}
+		.tarjetas
+		{
+			display: grid; grid-template-rows: 1fr; grid-template-columns: 1fr 1fr;
+			padding: 20px;
+			max-width: 100%;
+			
+
 		}
 		.opcion
 		{
-			cursor: pointer;
-			padding: 100px 30px;
-			font-size: 240%;
-			background-color: #FAFAFA;
-			margin:10px;
-			border-radius: 3px;
+			
 		}
 		.opcion:hover
 		{
-			background-color: #EEEEEE;
+			
 		}
 		.container-footer
 		{
-			margin: 20px;
+			
+		}
+
+		#label
+		{
+			color: white;
+
+		}
+		video
+		{
+			height: 300px; width: 500px;
+			opacity: .8; 
+			border-radius: 5px;
+		}
+		video:hover
+		{
+			height: 302px; width: 502px;
+		}
+
+		.browser
+		{
+			border: none; border: solid 1px #0d0d0d; border-radius: 3px;
+			opacity: 1;
+			background: none;
+			width: 60%;
+			font-size: 30px; color: white;
+			margin-top: 6px; margin-left: 8%;
+			cursor: default;
+			padding: 2px;padding-left: 5px;
+		}
+		.button
+		{
+			border: none; border-radius: 3px; border: solid 2px #b3b3cc; 
+			color: white; font-size: 15px; 
+			background-color: #b3b3cc;
+			padding: 10px;
+			margin-top: 6px; margin-left: 20px;
+			cursor: pointer;
+
+		}
+		.button:hover
+		{
+			background-color: #131339;
+			border: solid 2px white; 
+		}
+		.titulo
+		{
+			border: solid black 1px; border-radius: 5px;
+			background-color: #080612; 
+			color: #62635D;
+			padding: 20px;
 		}
 	</style>
 	<script type="text/javascript">
-		
+		function show()
+		{
+			document.getElementsByClassName("top-bar")[0].classList.remove("hides");
+			document.getElementsByClassName("top-bar")[0].classList.add("shows");
+		}
+		function hide()
+		{
+			document.getElementsByClassName("top-bar")[0].classList.remove("shows");
+			document.getElementsByClassName("top-bar")[0].classList.add("hides");
+		}
 	</script>
 </head>
 	<body>
 		<div class="container">
 			<div class="container-head">
-				GAME CENTER
+				<div class="top-bar" onclick="" onmouseover="show()" onmouseleave="hide()">
+					<div>
+						<img id="title" src="white-bitmap.png"> <b id="label">Hello buddy!</b>
+					</div>
+					<div class="middle">
+						 <input type="text" class="browser" name="" placeholder="Search here">
+					</div>
+					<div class="sesion">
+						<button class="button" onClick="alert('Sesion cerrada'); document.getElementsByClassName('button')[0].innerHTML = 'Abrir Sesion';"> Close Sesion</button>
+					</div>
+				</div>
 			</div>
 			<div class="container-body">
-				<div class="opcion" onclick="window.location.href = 'Conecta5/4enRaya.html'">
-					5 IN LINE
+				<div class="titulo">
+					Top today's games
 				</div>
-				<div class="opcion" onclick="window.location.href = 'Sudoku/sudoku.html'">
-					SUDOKU PARTY
+				<div class="tarjetas">
+					<div class="card" onclick="window.location.href = 'Conecta5/4enRaya.html'">
+						<video muted loop id="" class="video" autoplay="autoplay" >
+							<source src="confetti.mp4" type="video/mp4" />
+						</video>
+					</div>
+					<div class="card" onclick="window.location.href = 'Sudoku/sudoku.html'">
+						<video muted loop id="" class="video" autoplay="autoplay" >
+							<source src="disco.mp4" type="video/mp4" />
+						</video>
+					</div>
 				</div>
 			</div>
 			<div class="container-footer">
