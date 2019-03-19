@@ -1,4 +1,9 @@
 /* 5inline styles*/
+
+html 
+{
+	background-color: #1E414C;
+}
 #divJuego{
 	text-align:center;
 }
@@ -16,8 +21,9 @@ svg rect{
 {
 	display: grid; grid-template-columns: 1fr 4fr;
 	border: solid 1px orange;
-	margin-top: -10px; margin-bottom: -10px;
-	width: 100%;
+	margin: 1%;
+	width: 98%;
+	font-family: sans-serif;
 
 }
 .content
@@ -31,7 +37,8 @@ svg rect{
 {
 	margin: 0% 0%;
 	border: yellow 1px solid;
-	text-align: center;
+	text-align: center; color: #27A0C7;
+	background-color: #4C351E;
 }
 svg circle{
 	fill: white;
