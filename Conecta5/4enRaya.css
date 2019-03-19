@@ -8,15 +8,19 @@ svg rect{
 	stroke: #314037;
 	stroke-width:1;
 }
-
 .content
 {
-	margin: 10%;
+	margin: 0% 10%;
 	border: red solid 1px;
 	text-align: center;
 	background-color: #5B996A;
 }
-
+.top-page
+{
+	margin: 0% 10%;
+	border: yellow 1px solid;
+	text-align: center;
+}
 svg circle{
 	fill: white;
 	stroke: black;

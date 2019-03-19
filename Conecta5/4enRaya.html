@@ -8,15 +8,16 @@
 </head>
 
 <body> 
-	<button onclick='window.location.href = "../index.html"'> Volver </button>
-	<h1>5 in Line</h1>
-	<p><strong>Human: </strong><span id="puntosHumano"></span></p>
-	<p><strong>AI: </strong><span id="puntosIA"></span></p>
-	<p id="pResultado">
-		<span id="spanResultado"></span>
-		<button type="button" class="btn" id="btnSiguiente">Siguiente partida</button>
-	</p>
-	
+	<div class="top-page">
+		<button onclick='window.location.href = "../index.html"'> Volver </button>
+		<h1>5 in Line</h1>
+		<p><strong>Human: </strong><span id="puntosHumano"></span></p>
+		<p><strong>AI: </strong><span id="puntosIA"></span></p>
+		<p id="pResultado">
+			<span id="spanResultado"></span>
+			<button type="button" class="btn" id="btnSiguiente">Siguiente partida</button>
+		</p>
+	</div>
 	<div class="content">
 		<svg id="svg" width="700" height="650"></svg>
 		<script src="js/4enRaya.js"></script>
