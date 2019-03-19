@@ -1,3 +1,4 @@
+/* 5inline styles*/
 #divJuego{
 	text-align:center;
 }
@@ -15,9 +16,9 @@ svg rect{
 {
 	display: grid; grid-template-columns: 1fr 4fr;
 	border: solid 1px orange;
-	margin: 0px;
+	margin-top: -10px;
 	width: 100%;
-	
+
 }
 .content
 {
@@ -43,8 +44,8 @@ svg circle{
 
 svg polygon{
 	fill: white;
-	stroke: black;
-	stroke-width: 2;
+	stroke: gray;
+	stroke-width: 1;
 }
 
 svg polygon:hover{
