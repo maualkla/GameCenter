@@ -46,8 +46,8 @@ function preparar(){
 	r.setAttribute('y', rMargenY);	//margen superior para las flechas
 	r.setAttribute('rx', 20);
 	r.setAttribute('ry', 20);
-	r.setAttribute('width', 600);
-	r.setAttribute('height', 515);
+	r.setAttribute('width', 700);
+	r.setAttribute('height', 615);
 	svg.appendChild(r);
 	
 	mostrarPuntos();
