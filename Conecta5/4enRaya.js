@@ -89,7 +89,7 @@ function iniciarPartida(){
 	}
 	
 	//<polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1" />
-	for (var i = 0; i < 7; i++){
+	for (var i = 0; i < 8; i++){
 		f = document.createElementNS(SVG_NS,"polygon");
 		var p1X = 15 + 85*i;
 		var p1Y = 15;
