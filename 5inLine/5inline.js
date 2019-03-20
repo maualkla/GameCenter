@@ -40,6 +40,7 @@ function upLevel()
 
 function restartLevel() 
 {
+	alert(" GAME OVER ");
 	nivel = 1;
 }
 
@@ -334,8 +335,8 @@ function valorarJugada(tablero, jugador, col, profundidad){
 }
 
 function empate(){
-	console.log("Empate");
-	alert("Empate");
+	console.log("Ypu draw");
+	alert("Draw");
 	pResultado.style.visibility = "visible";
 }
 
