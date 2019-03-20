@@ -18,7 +18,7 @@ var vistaTablero;		//Un array de circles (por columnas) de 7 arrays de 6 posicio
 var puntos = [0,0];		//Puntos de la partida [Humano, IA]
 var pResultado;			//Elemento HTML con la información del resultado de la partida
 var mensaje; 			//Texto del mensaje ganar/perder
-var nivel = 5;			//Nivel de juego
+var nivel = 1;			//Nivel de juego
 var pausa = false;		//Indica si el juego está en pausa
 var contadorMovimientos = 0;
 var rMargenY = 50;
@@ -27,6 +27,16 @@ var rAltura = 515;
 //TODO: Poda alfa-beta
 //Guardamos el valor mínimo (alfa, si es MIN(juega Humano)) o máximo (beta, si es MAX(juega IA)) de cada nivel.
 //Si en al analizar una jugada de HUMANO, una opción no es inferior al mínimo...
+
+function upLevel()
+{
+	nivel++;
+	if(nivel == 11)
+	{
+		console.log(" Juego terminado. ");
+		alert(" GAME OVER");
+	}
+}
 
 function preparar(){
 	svg = document.getElementById("svg");

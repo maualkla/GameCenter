@@ -7,21 +7,23 @@
 		<link rel="shortcut icon" href="../5il.png" />
 		<title>5inLine - GameCenter	</title>
 	</head>
-
+ 
 	<body> 
 		
 		<div class="mega">
 
 			<div class="top-page">
-				<button onclick='window.location.href = "../index.html"'> Volver </button>
+				
 				<img src="../5inline.png">
 				<h1>5 in Line</h1>
 				<p><strong>Human: </strong><span id="puntosHumano"></span></p>
 				<p><strong>AI: </strong><span id="puntosIA"></span></p>
 				<p id="pResultado">
 					<span id="spanResultado"></span>
-					<button type="button" class="btn" id="btnSiguiente">Siguiente partida</button>
+					<button type="button" class="btn" id="btnSiguiente" onclick="upLevel()">Siguiente partida</button>
 				</p>
+
+				<button onclick='window.location.href = "../index.html"'> Volver </button>
 			</div>
 			
 			<div class="content">
