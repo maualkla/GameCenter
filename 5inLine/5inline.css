@@ -14,6 +14,7 @@ E3776E
 html 
 {
 	background-color: #1E414C;
+	font-family: sans-serif;
 }
 #divJuego{
 	text-align:center;
@@ -35,7 +36,7 @@ svg rect{
 	margin: 1% 12.5%; 
 	width: 70%;
 	height: 90%;
-	font-family: sans-serif;
+	
 	-webkit-box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.75);
 	-moz-box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.75);
 	box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.75);
@@ -95,4 +96,19 @@ svg polygon:hover{
 
 #pResultado{
 	visibility: hidden;
+}
+
+.msgbox
+{
+	display: none;
+	background-color: #33578C;
+	border: none; border-radius: 3px;
+	position: fixed;
+	margin: -500px 0px 0px 42%;
+	color: white; text-align: center; font-size: 110%;
+	padding: 15px 50px;
+	max-width: 10%;
+	-webkit-box-shadow: 2px 4px 900px 1000px rgba(0,0,0,.75);
+	-moz-box-shadow: 2px 4px 900px 1000px rgba(0,0,0,.75);
+	box-shadow: 2px 4px 900px 1000px rgba(0,0,0,.75);
 }

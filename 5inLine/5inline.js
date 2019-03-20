@@ -1,6 +1,7 @@
 console.log("Iniciando 5inLine");
 window.onload = preparar;
 
+
 //Constantes
 const FILAS = 7; // de 6 a 7
 const COLS = 8; // de 7 a 8
@@ -28,13 +29,20 @@ var rAltura = 515;
 //Guardamos el valor mínimo (alfa, si es MIN(juega Humano)) o máximo (beta, si es MAX(juega IA)) de cada nivel.
 //Si en al analizar una jugada de HUMANO, una opción no es inferior al mínimo...
 
+function displayStart()
+{
+	document.getElementById("msgbox-title").innerHTML = "Welcome to 5inLine, if you beat our AI you pass to the next level, if you loose you will return to the first level.";
+	document.getElementById("msg-btn").innerHTML = " Iniciar Partida ";
+	document.getElementsByClassName("msgbox")[0].style.display = "block";
+}
+
 function upLevel()
 {
 	nivel++;
 	if(nivel == 11)
 	{
 		console.log(" Juego terminado. ");
-		alert(" GAME OVER");
+		alert(" GAME OVER ");
 	}
 }
 
@@ -71,6 +79,7 @@ function preparar(){
 	document.getElementById("btnSiguiente").addEventListener("click", iniciarPartida);
 	
 	iniciarPartida();
+
 }
 
 function iniciarPartida(){
