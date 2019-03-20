@@ -42,6 +42,10 @@ svg rect{
 	background-color: #4C351E;
 
 }
+img
+{
+	width: 100%;
+}
 svg circle{
 	fill: white;
 	stroke: gray;
