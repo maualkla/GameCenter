@@ -1,13 +1,13 @@
-console.log("Iniciando 4enRaya");
+console.log("Iniciando 5inLine");
 window.onload = preparar;
 
 //Constantes
-const FILAS = 7;
-const COLS = 8;
+const FILAS = 7; // de 6 a 7
+const COLS = 8; // de 7 a 8
 const SVG_NS = "http://www.w3.org/2000/svg";
-const COLOR0 = "white";
-const COLOR_HUMANO = "blue";
-const COLOR_IA = "red";
+const COLOR0 = "#EFF8FA"; // Cambiamos white por #EFF8FA
+const COLOR_HUMANO = "#33578C"; // Cambiamos el color de blue a #33578C
+const COLOR_IA = "#C73B3C"; // Cambiamos el color de red a #C73B3C
 const OBJETIVO = 10;		//Jugamos a 10 puntos
 
 //Variables Globales
@@ -18,7 +18,7 @@ var vistaTablero;		//Un array de circles (por columnas) de 7 arrays de 6 posicio
 var puntos = [0,0];		//Puntos de la partida [Humano, IA]
 var pResultado;			//Elemento HTML con la información del resultado de la partida
 var mensaje; 			//Texto del mensaje ganar/perder
-var nivel = 5;			//Nivel de juego
+var nivel = 1;			//Nivel de juego
 var pausa = false;		//Indica si el juego está en pausa
 var contadorMovimientos = 0;
 var rMargenY = 50;
@@ -27,6 +27,21 @@ var rAltura = 515;
 //TODO: Poda alfa-beta
 //Guardamos el valor mínimo (alfa, si es MIN(juega Humano)) o máximo (beta, si es MAX(juega IA)) de cada nivel.
 //Si en al analizar una jugada de HUMANO, una opción no es inferior al mínimo...
+
+function upLevel()
+{
+	nivel++;
+	if(nivel == 11)
+	{
+		console.log(" Juego terminado. ");
+		alert(" GAME OVER");
+	}
+}
+
+function restartLevel() 
+{
+	nivel = 1;
+}
 
 function preparar(){
 	svg = document.getElementById("svg");
@@ -46,8 +61,8 @@ function preparar(){
 	r.setAttribute('y', rMargenY);	//margen superior para las flechas
 	r.setAttribute('rx', 20);
 	r.setAttribute('ry', 20);
-	r.setAttribute('width', 600);
-	r.setAttribute('height', 515);
+	r.setAttribute('width', 700);
+	r.setAttribute('height', 615);
 	svg.appendChild(r);
 	
 	mostrarPuntos();
@@ -59,6 +74,9 @@ function preparar(){
 
 function iniciarPartida(){
 	
+	// Script para mostrar el nivel --MEAL
+	document.getElementById("level").innerHTML = "LEVEL " + nivel;
+
 	pResultado.style.visibility = 'hidden';
 	pausa = false;
 	
@@ -89,7 +107,7 @@ function iniciarPartida(){
 	}
 	
 	//<polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1" />
-	for (var i = 0; i < 7; i++){
+	for (var i = 0; i < 8; i++){
 		f = document.createElementNS(SVG_NS,"polygon");
 		var p1X = 15 + 85*i;
 		var p1Y = 15;
@@ -156,17 +174,21 @@ function jugar(col, tablero){
 	if (ganador == COLOR_HUMANO){
 		pausa = true;
 		console.log("Gana Humano");
-		mensaje.innerHTML = 'Tú ganas humano';
+		mensaje.innerHTML = 'You win';
 		pResultado.style.visibility = "visible";
 		puntos[0]++;
+		upLevel();
+		console.log(" Subio nivel ");
 		mostrarPuntos();
 	}
 	else if (ganador == COLOR_IA){
 		pausa = true;
 		console.log("Gana IA");
-		mensaje.innerHTML = '¡Yo gano!';
+		mensaje.innerHTML = 'You loose';
 		pResultado.style.visibility = "visible";
 		puntos[1]++;
+		restartLevel();
+		console.log(" Perdiste tu nivel. ");
 		mostrarPuntos();
 	}
 	else {
@@ -338,13 +360,13 @@ function verGanador(tablero){
 			else if (tablero[f][c] == COLOR_HUMANO){
 				n1++;
 				n2 = 0;
-				if (n1 == 4)
+				if (n1 == 5)
 					return COLOR_HUMANO;
 			}
 			else{
 				n1 = 0;
 				n2++;
-				if (n2 == 4)
+				if (n2 == 5)
 					return COLOR_IA;
 			}
 		}
@@ -361,13 +383,13 @@ function verGanador(tablero){
 			else if (tablero[f][c] == COLOR_HUMANO){
 				n1++;
 				n2 = 0;
-				if (n1 == 4)
+				if (n1 == 5)
 					return COLOR_HUMANO;
 			}
 			else{
 				n1 = 0;
 				n2++;
-				if (n2 == 4)
+				if (n2 == 5)
 					return COLOR_IA;
 			}
 		}
@@ -388,13 +410,13 @@ function verGanador(tablero){
 			else if (tablero[f][c] == COLOR_HUMANO){
 				n1++;
 				n2 = 0;
-				if (n1 == 4)
+				if (n1 == 5)
 					return COLOR_HUMANO;
 			}
 			else{
 				n1 = 0;
 				n2++;
-				if (n2 == 4)
+				if (n2 == 5)
 					return COLOR_IA;
 			}
 		}
@@ -415,13 +437,13 @@ function verGanador(tablero){
 			else if (tablero[f][c] == COLOR_HUMANO){
 				n1++;
 				n2 = 0;
-				if (n1 == 4)
+				if (n1 == 5)
 					return COLOR_HUMANO;
 			}
 			else{
 				n1 = 0;
 				n2++;
-				if (n2 == 4)
+				if (n2 == 5)
 					return COLOR_IA;
 			}
 		}

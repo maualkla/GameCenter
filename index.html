@@ -36,13 +36,13 @@
 		}
 		@keyframes show
 		{
-			from{ height: 8%; }
-			to{ height: 12%; }
+			from{ height: 8%; padding-top: 10px;}
+			to{ height: 12%; padding-top: 20px; }
 		}
 		@keyframes hide
 		{
-			from{ height: 12%; }
-			to{ height: 8%; }
+			from{ height: 12%; padding-top: 20px;}
+			to{ height: 8%; padding-top: 20px;}
 		}
 		#title
 		{
@@ -140,7 +140,7 @@
 	<body>
 		<div class="container">
 			<div class="container-head">
-				<div class="top-bar" onclick="" onmouseover="show()" onmouseleave="hide()">
+				<div class="top-bar" onclick="" onmouseover="" onmouseleave="">
 					<div>
 						<img id="title" src="white-bitmap.png"> <b id="label">Hello buddy!</b>
 					</div>
@@ -157,15 +157,17 @@
 					Top today's games
 				</div>
 				<div class="tarjetas">
-					<div class="card" onclick="window.location.href = 'Conecta5/4enRaya.html'">
+					<div class="card" onclick="window.location.href = '5inLine/5inline.html'">
 						<video muted loop id="" class="video" autoplay="autoplay" >
 							<source src="confetti.mp4" type="video/mp4" />
 						</video>
+						5 IN LINE
 					</div>
 					<div class="card" onclick="window.location.href = 'Sudoku/sudoku.html'">
 						<video muted loop id="" class="video" autoplay="autoplay" >
 							<source src="disco.mp4" type="video/mp4" />
 						</video>
+						SUDOKU PARTY
 					</div>
 				</div>
 			</div>

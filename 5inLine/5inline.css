@@ -1,0 +1,98 @@
+/* 5inline styles*/
+
+/*
+
+Colores 
+
+688AC4
+33578C
+4C504F
+C73B3C
+E3776E
+*/
+
+html 
+{
+	background-color: #1E414C;
+}
+#divJuego{
+	text-align:center;
+}
+svg{
+	-webkit-box-shadow: 0px 0px 23px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 23px -6px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 23px -6px rgba(0,0,0,0.75);
+}
+svg rect{
+	fill: #4C504F;
+	stroke: #4C504F;
+	stroke-width:1;
+	opacity: .7;
+}
+.mega
+{
+	display: grid; grid-template-columns: 1fr 4fr;
+	margin: 1% 12.5%; 
+	width: 70%;
+	height: 90%;
+	font-family: sans-serif;
+	-webkit-box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.75);
+	box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.75);
+}
+.content
+{
+	margin: 0% 0%;
+	text-align: center;
+	background-color: #7F8583;
+}
+.top-page
+{
+	padding-top: 20px;
+	margin: 0% 0%;
+	text-align: center; color: #4C504F;
+	background-color: #688AC4;
+
+}
+button
+{
+	background-color: #C73B3C;
+	border: solid 1px #C73B3C; border-radius: 3px; 
+	cursor: pointer;
+	color: white; font-size: 130%;
+	padding: 5px;
+	margin: 10px;
+}
+button:hover
+{
+	background-color: #E3776E;
+	border-color: #E3776E;
+}
+img
+{
+	width: 90%;
+	margin-left: 4%;
+}
+svg circle{
+	fill: white;
+	stroke: gray;
+	stroke-width: 1;
+	-webkit-box-shadow: 0px 0px 51px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 51px 4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 51px 4px rgba(0,0,0,0.75);
+
+}
+
+svg polygon{
+	fill: #EFF8FA;
+	stroke: gray;
+	stroke-width: 1;
+}
+
+svg polygon:hover{
+	cursor: pointer;
+}
+
+#pResultado{
+	visibility: hidden;
+}
