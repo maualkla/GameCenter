@@ -338,13 +338,13 @@ function verGanador(tablero){
 			else if (tablero[f][c] == COLOR_HUMANO){
 				n1++;
 				n2 = 0;
-				if (n1 == 4)
+				if (n1 == 5)
 					return COLOR_HUMANO;
 			}
 			else{
 				n1 = 0;
 				n2++;
-				if (n2 == 4)
+				if (n2 == 5)
 					return COLOR_IA;
 			}
 		}
@@ -361,13 +361,13 @@ function verGanador(tablero){
 			else if (tablero[f][c] == COLOR_HUMANO){
 				n1++;
 				n2 = 0;
-				if (n1 == 4)
+				if (n1 == 5)
 					return COLOR_HUMANO;
 			}
 			else{
 				n1 = 0;
 				n2++;
-				if (n2 == 4)
+				if (n2 == 5)
 					return COLOR_IA;
 			}
 		}
@@ -388,13 +388,13 @@ function verGanador(tablero){
 			else if (tablero[f][c] == COLOR_HUMANO){
 				n1++;
 				n2 = 0;
-				if (n1 == 4)
+				if (n1 == 5)
 					return COLOR_HUMANO;
 			}
 			else{
 				n1 = 0;
 				n2++;
-				if (n2 == 4)
+				if (n2 == 5)
 					return COLOR_IA;
 			}
 		}
@@ -415,13 +415,13 @@ function verGanador(tablero){
 			else if (tablero[f][c] == COLOR_HUMANO){
 				n1++;
 				n2 = 0;
-				if (n1 == 4)
+				if (n1 == 5)
 					return COLOR_HUMANO;
 			}
 			else{
 				n1 = 0;
 				n2++;
-				if (n2 == 4)
+				if (n2 == 5)
 					return COLOR_IA;
 			}
 		}
