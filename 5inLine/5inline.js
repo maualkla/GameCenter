@@ -1,4 +1,4 @@
-console.log("Iniciando 4enRaya");
+console.log("Iniciando 5inLine");
 window.onload = preparar;
 
 //Constantes
