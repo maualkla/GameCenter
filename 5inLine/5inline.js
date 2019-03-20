@@ -38,6 +38,11 @@ function upLevel()
 	}
 }
 
+function restartLevel() 
+{
+	nivel = 1;
+}
+
 function preparar(){
 	svg = document.getElementById("svg");
 	pResultado = document.getElementById("pResultado");
@@ -69,6 +74,9 @@ function preparar(){
 
 function iniciarPartida(){
 	
+	// Script para mostrar el nivel --MEAL
+	document.getElementById("level").innerHTML = "LEVEL " + nivel;
+
 	pResultado.style.visibility = 'hidden';
 	pausa = false;
 	
@@ -166,17 +174,21 @@ function jugar(col, tablero){
 	if (ganador == COLOR_HUMANO){
 		pausa = true;
 		console.log("Gana Humano");
-		mensaje.innerHTML = 'Tú ganas humano';
+		mensaje.innerHTML = 'You win';
 		pResultado.style.visibility = "visible";
 		puntos[0]++;
+		upLevel();
+		console.log(" Subio nivel ");
 		mostrarPuntos();
 	}
 	else if (ganador == COLOR_IA){
 		pausa = true;
 		console.log("Gana IA");
-		mensaje.innerHTML = '¡Yo gano!';
+		mensaje.innerHTML = 'You loose';
 		pResultado.style.visibility = "visible";
 		puntos[1]++;
+		restartLevel();
+		console.log(" Perdiste tu nivel. ");
 		mostrarPuntos();
 	}
 	else {
