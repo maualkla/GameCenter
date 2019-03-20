@@ -6,8 +6,8 @@ const FILAS = 7; // de 6 a 7
 const COLS = 8; // de 7 a 8
 const SVG_NS = "http://www.w3.org/2000/svg";
 const COLOR0 = "#EFF8FA"; // Cambiamos white por #EFF8FA
-const COLOR_HUMANO = "#6471D9"; // Cambiamos el color de blue a #6471D9
-const COLOR_IA = "#C82835"; // Cambiamos el color de red a #C82835
+const COLOR_HUMANO = "#33578C"; // Cambiamos el color de blue a #33578C
+const COLOR_IA = "#C73B3C"; // Cambiamos el color de red a #C73B3C
 const OBJETIVO = 10;		//Jugamos a 10 puntos
 
 //Variables Globales

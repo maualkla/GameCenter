@@ -1,5 +1,16 @@
 /* 5inline styles*/
 
+/*
+
+Colores 
+
+688AC4
+33578C
+4C504F
+C73B3C
+E3776E
+*/
+
 html 
 {
 	background-color: #1E414C;
@@ -13,8 +24,8 @@ svg{
 	box-shadow: 0px 0px 23px -6px rgba(0,0,0,0.75);
 }
 svg rect{
-	fill: #51A63E;
-	stroke: #314037;
+	fill: #4C504F;
+	stroke: #4C504F;
 	stroke-width:1;
 	opacity: .7;
 }
@@ -33,18 +44,19 @@ svg rect{
 {
 	margin: 0% 0%;
 	text-align: center;
-	background-color: #5B996A;
+	background-color: #7F8583;
 }
 .top-page
 {
 	margin: 0% 0%;
-	text-align: center; color: #27A0C7;
-	background-color: #4C351E;
+	text-align: center; color: #4C504F;
+	background-color: #688AC4;
 
 }
 img
 {
-	width: 100%;
+	width: 90%;
+	margin-left: 4%;
 }
 svg circle{
 	fill: white;
