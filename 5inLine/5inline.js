@@ -31,9 +31,18 @@ var rAltura = 515;
 
 function displayStart()
 {
-	document.getElementById("msgbox-title").innerHTML = "Welcome to 5inLine, if you beat our AI you pass to the next level, if you loose you will return to the first level.";
-	document.getElementById("msg-btn").innerHTML = " Iniciar Partida ";
+	document.getElementsByClassName("mega")[0].addEventListener("click", hideMsgbox);
+	document.getElementById("msgbox-title").innerHTML = "Welcome to 5inLine, if you beat our AI you pass to the next level, if you loose you will return to the beggining. Nice luck!";
+	document.getElementById("msgbox-btn").innerText = " Iniciar Partida ";
+	document.getElementById("msgbox-btn").addEventListener("click", hideMsgbox);
+	document.getElementById("scape-btn").disabled = true;
 	document.getElementsByClassName("msgbox")[0].style.display = "block";
+}
+
+function hideMsgbox()
+{
+	document.getElementsByClassName("msgbox")[0].style.display = "none";
+	document.getElementById("scape-btn").disabled = false;
 }
 
 function upLevel()
@@ -79,7 +88,7 @@ function preparar(){
 	document.getElementById("btnSiguiente").addEventListener("click", iniciarPartida);
 	
 	iniciarPartida();
-
+	displayStart();
 }
 
 function iniciarPartida(){

@@ -15,6 +15,7 @@ html
 {
 	background-color: #1E414C;
 	font-family: sans-serif;
+	cursor: default;
 }
 #divJuego{
 	text-align:center;
@@ -100,6 +101,7 @@ svg polygon:hover{
 
 .msgbox
 {
+	cursor: default;
 	display: none;
 	background-color: #33578C;
 	border: none; border-radius: 3px;
