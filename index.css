@@ -2,6 +2,7 @@ body
 {
 	background-color: #33334d;
 	font-family: sans-serif;
+	z-index: 0;
 }
 .container-head
 {
@@ -17,6 +18,7 @@ body
 	opacity: .9; 
 	padding: 10px;
 	border-radius: 0px 0px 50px 50px;
+	z-index: 10;
 }
 .shows
 {
@@ -67,13 +69,30 @@ body
 .card
 {
 	cursor: pointer;
+	opacity: .8;
 }
 .card-icon
 {
 	position: absolute;
 	z-index: 1;
 	width: 250px; 
-	margin-left: -400px; 
+	margin-left: -370px; margin-top: 23px;
+}
+#card-special-1
+{
+	margin-top: 30px;
+}
+#card-special-2
+{
+	
+}
+#v1
+{
+
+}
+#v2
+{
+	margin-left: -130px;
 }
 .container-footer
 {
@@ -87,13 +106,13 @@ body
 }
 video
 {
-	height: 300px; width: 500px;
-	opacity: .8; 
+	width: 120%;
 	border-radius: 5px;
 }
-video:hover
+.card:hover
 {
-	height: 302px; width: 502px;
+	opacity: 1;
+	/*height: 302px; width: 502px;]*/
 }
 
 .browser
