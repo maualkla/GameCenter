@@ -4,13 +4,26 @@ body
 	text-align: center;
 }
 
+
+.container
+{
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+}
+
+.controls
+{
+	border: solid red 2px;
+}
+.board
+{
+	border: solid yellow 2px;	
+}
+
+
 img.logo 
 {
-	display: block;
-	margin-top: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+	width: 100%;
 	height: auto;
 }
 
