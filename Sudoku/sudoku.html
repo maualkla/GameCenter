@@ -2,8 +2,9 @@
 <html>
 	<head>
 
-		<title>SudokUber!</title>
+		<title>Sudoku Party!</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="../sudoku.png" />
 		<script type="text/javascript" src="sudoku.js"></script>
 		<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
 		<script language="javascript" type="text/javascript">
@@ -141,38 +142,7 @@
 
 	<body>
 		<div class="container">
-			<div class="controls">
-				<!-- Button                                                  --->
-				<button onclick='window.location.href = "../index.html"'> Volver </button>
-				<!--- Button                                                 ---->
 
-				<!--- Logo panel                                              ----->
-				<section id="logosection">
-					<img class="logo" src="../sdk.png" />
-				</section>
-				<!--- Logo panel                                              ----->
-
-				<!--    Menu final                                          --->
-				<center>
-					<form id="formwrapper">
-						<span id="newGame" class="formbutton">Give me another</span>
-						<span id="solve" class="formbutton">Give up</span>
-					</form>
-				</center>
-				<!--     Menu final                                         ---->
-
-				<!--- Error panel                                            ----->
-				<div class="mistakeScreen">
-					<center class="mistakeText">Pffft. Looks like you made a mistake somewhere.</center>
-				</div>
-				<!--- Errror panel                                            ---->
-
-				<!--- Winner panel                                            ---->
-				<div class="winScreen">
-					<center class="winText">You're a winner. That's pretty neat.</center>
-				</div>
-				<!--- Winner panel                                            ----->
-			</div>
 			<div class="board">
 				<section id="sudokuPuzzle">
 
@@ -255,6 +225,40 @@
 
 				</section>
 			</div>
+
+			<div class="controls">
+				<!-- Button                                                  --->
+				<button onclick='window.location.href = "../index.html"'> Volver </button>
+				<!--- Button                                                 ---->
+
+				<!--- Logo panel                                              ----->
+				<section id="logosection">
+					<img class="logo" src="../sdk.png" />
+				</section>
+				<!--- Logo panel                                              ----->
+
+				<!--    Menu final                                          --->
+				<center>
+					<form id="formwrapper">
+						<span id="newGame" class="formbutton">Give me another</span>
+						<span id="solve" class="formbutton">Give up</span>
+					</form>
+				</center>
+				<!--     Menu final                                         ---->
+
+				<!--- Error panel                                            ----->
+				<div class="mistakeScreen">
+					<center class="mistakeText">Pffft. Looks like you made a mistake somewhere.</center>
+				</div>
+				<!--- Errror panel                                            ---->
+
+				<!--- Winner panel                                            ---->
+				<div class="winScreen">
+					<center class="winText">You're a winner. That's pretty neat.</center>
+				</div>
+				<!--- Winner panel                                            ----->
+			</div>
+
 		</div>
 	</body>
 
