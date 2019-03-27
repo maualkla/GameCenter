@@ -1,18 +1,34 @@
-body {
+body 
+{
 	position: relative;
 	text-align: center;
 }
 
-img.logo {
-	display: block;
-	margin-top: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+
+.container
+{
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+}
+
+.controls
+{
+	border: solid red 2px;
+}
+.board
+{
+	border: solid yellow 2px;	
+}
+
+
+img.logo 
+{
+	width: 100%;
 	height: auto;
 }
 
-table.container {
+table.container 
+{
 	position: relative;
 	border-spacing: 0;
 	border: 4px solid #0abb9c;
@@ -24,13 +40,15 @@ table.container {
     margin-top: 1em;
 }
 
-td.cell {
+td.cell 
+{
 	border: 2px dotted #0abb9c;
 	padding: 0;
 	cursor: context-menu;
 }
 
-td.emptyCell {
+td.emptyCell 
+{
 	border: 2px dotted #0abb9c;
 	padding: 0;
 	cursor: pointer;
@@ -38,36 +56,43 @@ td.emptyCell {
 
 #t0x2, #t0x5, #t1x2, #t1x5, #t2x5,
 #t3x2,#t3x5, #t4x2, #t4x5, #t5x2, #t5x5,
-#t6x2, #t6x5, #t7x2, #t7x5, #t8x2, #t8x5 {
+#t6x2, #t6x5, #t7x2, #t7x5, #t8x2, #t8x5 
+{
 	border-right: 3px solid #0abb9c;
 }
 
 #t2x0, #t2x1, #t2x3, #t2x4, #t2x6, #t2x7,
-#t5x0, #t5x1, #t5x3, #t5x4, #t5x6, #t5x7 {
+#t5x0, #t5x1, #t5x3, #t5x4, #t5x6, #t5x7 
+{
 	border-bottom: 3px solid #0abb9c;
 }
 
-#t2x2, #t2x5, #t2x8, #t5x2, #t5x5, #t5x8 {
+#t2x2, #t2x5, #t2x8, #t5x2, #t5x5, #t5x8 
+{
 	border-bottom: 3px solid #0abb9c;
 	border-right: 3px solid #0abb9c;
 }
 
-.inner td {
+.inner td 
+{
 	width: 60px;
 	height: 60px;
 	text-align: center;
 	font-size: 2.0em;
 }
 
-.inner td:hover {
+.inner td:hover 
+{
 	background-color:#f2e5ee;
 }
 
-.inner td.selected {
+.inner td.selected 
+{
 	background-color:#ffbce2;
 }
 
-.mistakeScreen {
+.mistakeScreen 
+{
 	position: absolute;
 	width: 300px;
 	height: 300px;
@@ -85,7 +110,8 @@ td.emptyCell {
 	z-index: 1000;
 }
 
-.mistakeText {
+.mistakeText 
+{
 	text-align: center;
 	padding: 65px;
 	line-height: 40px;
@@ -96,7 +122,8 @@ td.emptyCell {
     cursor: pointer;
 }
 
-.winScreen {
+.winScreen 
+{
 	position: absolute;
 	width: 500px;
 	height: 500px;
@@ -114,7 +141,8 @@ td.emptyCell {
 	z-index: 1000;
 }
 
-.winText {
+.winText 
+{
 	text-align: center;
 	padding: 100px;
 	line-height: 70px;
@@ -125,11 +153,13 @@ td.emptyCell {
     cursor: context-menu;
 }
 
-#sudokuPuzzle {
+#sudokuPuzzle 
+{
 	position: relative;
 }
 
-.formbutton {
+.formbutton 
+{
 	position: relative;
 	background: #689fce;
 	display: inline-block;
@@ -146,7 +176,8 @@ td.emptyCell {
 	margin-top: 3em;
 }
 
-#numPad {
+#numPad 
+{
 	position: absolute;
 	width: 154px;
 	height: 80px;
@@ -161,7 +192,8 @@ td.emptyCell {
 	z-index: 500;
 }
 
-.padNumbers {
+.padNumbers 
+{
 	text-align: center;
 	padding: 6px;
 	line-height: 40px;
@@ -172,11 +204,13 @@ td.emptyCell {
     cursor: pointer;
 }
 
-#numPad span:hover {
+#numPad span:hover 
+{
 	color: #e2525f;
 }
 
-footer {
+footer 
+{
 	font: 10px Arial, sans-serif;
 	text-align: center;
 	margin-top: 30px;

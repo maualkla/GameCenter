@@ -3,127 +3,7 @@
 <head>
 	<title> GAME CENTER </title>
 	<link rel="shortcut icon" href="bitmap.png" />
-	<style type="text/css">
-		body
-		{
-			background-color: #33334d;
-			font-family: sans-serif;
-		}
-		.container-head
-		{
-			
-		}
-		.top-bar
-		{
-			display: grid; grid-template-columns: 2fr 5fr 1fr;
-			background-color: #131339;
-			position: fixed;
-			width: 99%; height: 8%; 
-			margin-top: -10px; margin-left: -10px;
-			opacity: .9; 
-			padding: 10px;
-			border-radius: 0px 0px 50px 50px;
-		}
-		.shows
-		{
-			animation-name: show;
-			animation-duration: 1s;
-		}
-		.hides
-		{
-			animation-name: hide;
-			animation-duration: 1s;
-		}
-		@keyframes show
-		{
-			from{ height: 8%; padding-top: 10px;}
-			to{ height: 12%; padding-top: 20px; }
-		}
-		@keyframes hide
-		{
-			from{ height: 12%; padding-top: 20px;}
-			to{ height: 8%; padding-top: 20px;}
-		}
-		#title
-		{
-			height: 45px; 
-			margin-left: 50px;
-		}
-		.container-body
-		{
-			padding-top: 80px;
-		}
-		.tarjetas
-		{
-			display: grid; grid-template-rows: 1fr; grid-template-columns: 1fr 1fr;
-			padding: 20px;
-			max-width: 100%;
-			
-
-		}
-		.opcion
-		{
-			
-		}
-		.opcion:hover
-		{
-			
-		}
-		.container-footer
-		{
-			
-		}
-
-		#label
-		{
-			color: white;
-
-		}
-		video
-		{
-			height: 300px; width: 500px;
-			opacity: .8; 
-			border-radius: 5px;
-		}
-		video:hover
-		{
-			height: 302px; width: 502px;
-		}
-
-		.browser
-		{
-			border: none; border: solid 1px #0d0d0d; border-radius: 3px;
-			opacity: 1;
-			background: none;
-			width: 60%;
-			font-size: 30px; color: white;
-			margin-top: 6px; margin-left: 8%;
-			cursor: default;
-			padding: 2px;padding-left: 5px;
-		}
-		.button
-		{
-			border: none; border-radius: 3px; border: solid 2px #b3b3cc; 
-			color: white; font-size: 15px; 
-			background-color: #b3b3cc;
-			padding: 10px;
-			margin-top: 6px; margin-left: 20px;
-			cursor: pointer;
-
-		}
-		.button:hover
-		{
-			background-color: #131339;
-			border: solid 2px white; 
-		}
-		.titulo
-		{
-			border: solid black 1px; border-radius: 5px;
-			background-color: #080612; 
-			color: #62635D;
-			padding: 20px;
-		}
-	</style>
+	<link rel="stylesheet" href="index.css" />
 	<script type="text/javascript">
 		function show()
 		{
@@ -158,16 +38,16 @@
 				</div>
 				<div class="tarjetas">
 					<div class="card" onclick="window.location.href = '5inLine/5inline.html'">
-						<video muted loop id="" class="video" autoplay="autoplay" >
+						<video muted loop id="v1" class="video" autoplay="autoplay" >
 							<source src="confetti.mp4" type="video/mp4" />
 						</video>
-						5 IN LINE
+						<img class="card-icon" id="card-special-1" src="5inline.png">
 					</div>
 					<div class="card" onclick="window.location.href = 'Sudoku/sudoku.html'">
-						<video muted loop id="" class="video" autoplay="autoplay" >
+						<video muted loop id="v2" class="video" autoplay="autoplay" >
 							<source src="disco.mp4" type="video/mp4" />
 						</video>
-						SUDOKU PARTY
+						<img class="card-icon" id="card-special-2" src="sdk.png">
 					</div>
 				</div>
 			</div>
