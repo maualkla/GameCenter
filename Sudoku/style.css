@@ -2,6 +2,7 @@ body
 {
 	position: relative;
 	text-align: center;
+
 }
 
 
@@ -32,7 +33,18 @@ body
 
 .button
 {
+	background-color: white;
+	color: #6EBB9C; font-family: sans-serif;
+	border: #6EBB9C solid 1px; border-radius: 15px;
+	padding: 10px; margin: 20px 10px;
 
+}
+
+.timer
+{
+	font-family: sans-serif;
+	font-size: 150%;
+	color: white;
 }
 
 img.logo 
