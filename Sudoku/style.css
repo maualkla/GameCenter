@@ -5,7 +5,7 @@ body
 }
 
 
-.container
+.max-container
 {
 	display: grid;
 	grid-template-columns: 4fr 1fr;
@@ -19,7 +19,12 @@ body
 {
 	border: solid yellow 2px;	
 }
-
+.container
+{
+	-webkit-box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.3);
+	-moz-box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.3);
+	box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.3);
+}
 
 img.logo 
 {
