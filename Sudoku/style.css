@@ -8,13 +8,13 @@ body
 .max-container
 {
 	display: grid;
-	grid-template-columns: 3fr 1fr;
+	grid-template-columns: 2fr 1fr;
 }
 
 .controls
 {
 	background: #6EBB9C;
-	margin: 16px 0px 2px 4px; padding: 10px;
+	margin: 16px 40px 0px 4px; padding: 20px;
 	-webkit-box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.3);
 	-moz-box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.3);
 	box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.3);
@@ -32,12 +32,13 @@ body
 
 .button
 {
-	
+
 }
 
 img.logo 
 {
-	width: 100%;
+	width: 80%;
+	margin-top: 20px;
 	height: auto;
 }
 
