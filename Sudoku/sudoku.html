@@ -237,17 +237,11 @@
 				<!--- Logo panel                                              ----->
 
 				<!--    Menu final                                          --->
-				<center>
-					<form id="formwrapper">
-						<span id="newGame" class="button">Give me another</span>
-						<br>
-						<span> <div class="timer">Time</div></span>
-						<br>
-						<span id="solve" class="button">Give up</span>
-						<br>
-						<span><button onclick='window.location.href = "../index.html"' class="button"> Back to GameCenter </button></span>
-					</form>
-				</center>
+				<div class="menu-container">
+					<button class="button" onclick="solve()"> Give Up</button>
+					<button class="button" onclick="newGame()"> New Game </button>
+					<button class="button" onclick="window.location.href='../index.html'"> Return to GameCenter</button>
+				</div>
 				<!--     Menu final                                         ---->
 
 				<!--- Error panel                                            ----->

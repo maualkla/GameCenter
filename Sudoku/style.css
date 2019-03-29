@@ -24,6 +24,11 @@ body
 {
 
 }
+
+.menu-container
+{
+	display: grid; grid-auto-rows: 1fr 1fr 1fr;
+}
 .container
 {
 	-webkit-box-shadow: 2px 4px 43px 15px rgba(0,0,0,0.3);
