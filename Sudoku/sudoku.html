@@ -141,7 +141,7 @@
 	</head>
 
 	<body>
-		<div class="container">
+		<div class="max-container">
 
 			<div class="board">
 				<section id="sudokuPuzzle">
@@ -227,9 +227,8 @@
 			</div>
 
 			<div class="controls">
-				<!-- Button                                                  --->
-				<button onclick='window.location.href = "../index.html"'> Volver </button>
-				<!--- Button                                                 ---->
+				
+				
 
 				<!--- Logo panel                                              ----->
 				<section id="logosection">
@@ -238,12 +237,11 @@
 				<!--- Logo panel                                              ----->
 
 				<!--    Menu final                                          --->
-				<center>
-					<form id="formwrapper">
-						<span id="newGame" class="formbutton">Give me another</span>
-						<span id="solve" class="formbutton">Give up</span>
-					</form>
-				</center>
+				<div class="menu-container">
+					<button class="button" onclick="solve()"> Give Up</button>
+					<button class="button" onclick="newGame()"> New Game </button>
+					<button class="button" onclick="window.location.href='../index.html'"> Return to GameCenter</button>
+				</div>
 				<!--     Menu final                                         ---->
 
 				<!--- Error panel                                            ----->
@@ -251,6 +249,7 @@
 					<center class="mistakeText">Pffft. Looks like you made a mistake somewhere.</center>
 				</div>
 				<!--- Errror panel                                            ---->
+
 
 				<!--- Winner panel                                            ---->
 				<div class="winScreen">
@@ -261,8 +260,4 @@
 
 		</div>
 	</body>
-
-	<footer>
-		Web page design by Art Tucay Jr., for Uber Inc. All libraries and fonts within this page are used under personal means and are not meant for commerial use.
-	</footer>
 </html>
