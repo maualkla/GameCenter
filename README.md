@@ -11,18 +11,8 @@ Game center born as final stage in our APTICS class, this project contains Sudok
 
 #### Try it in: http://gamecenter.rf.gd/
 
-<<<<<<< HEAD
-## This project is not mine, im just taking two different projects and putting them in the same folder. 
-
-## Regards.
-
-
-### Check it: http://gamecenter.rf.gd/
-
-
-
 
 ## twitter.com/maualkla
-=======
+
 #### Contact: preguntas.asi@gmail.com
->>>>>>> 5cf6ed5573cd54e196a4baf9fb4b135b96a3577d
+
