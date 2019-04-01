@@ -4,6 +4,7 @@
 $game = "";
 $record = "";
 $user = "";
+$final = 0;
 
 // Getting params
 $game = $_POST['game'];
@@ -11,16 +12,28 @@ $record = $_POST['record'];
 $user = $_POST['user'];
 
 // Validating params
-if($game == "1")
+if(gettype($record) == integer)
 {
-	//Sudoku Party
+	$record = intval($record);
 }
-elseif($game == "0")
+else
 {
-	//5 in Line
+	$final = 1;
 }
 
 // Creating record
+if($final == 0)
+{
+	if($game == "1")
+	{
+		//Sudoku Party
+	}
+	elseif($game == "0")
+	{
+		//5 in Line
+	}
+}
+
 
 // Notifing record
 
