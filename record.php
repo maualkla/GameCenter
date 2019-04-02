@@ -30,20 +30,11 @@ else
 // Creating record
 if($final == 0)
 {
-	if($game == "1")
-	{
-		//Sudoku Party
-
-	}
-	elseif($game == "0")
-	{
-		//5 in Line
-
-	}
+	//conncect
+	$sql = 'INSERT INTO records (games, record, user) VALUES ("'.$game.'", "'.$record.'", "'.$user.'")';
+	//execute query
+	//show response
 }
-
-
-
 
 // Notifing record
 
