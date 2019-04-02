@@ -153,24 +153,23 @@ function cambiarColorFlecha(evento){
 }
 
 function mostrarPuntos(){
-	if((puntos[0] + puntos[1]) != OBJETIVO)
+	if((puntos[0] + puntos[1]) != 10)
 	{
 		document.getElementById("puntosHumano").innerHTML = puntos[0];
 		document.getElementById("puntosIA").innerHTML = puntos[1];
-		if (puntos[0] > puntos[1] )
-		{
+		if (puntos[0] >= OBJETIVO){
 			alert("Tú ganas Humano... por ahora");
 			location.reload();
-			alert(" MARCADOR " + puntos[0] + " A " + puntos[1]);
-			
 		}
-		elseif(puntos[0] < puntos[1] )
-		{
+		if (puntos[1] >= OBJETIVO){
 			alert("Te he ganado (como era de esperar) :)");
-			alert(" MARCADOR " + puntos[0] + " A " + puntos[1]);
 			location.reload();
-			// Aqui enviamos puntaje hacia Backend
 		}
+	}
+	else
+	{
+		alert(" MARCADOR " + puntos[0] + " A " + puntos[1])
+		// Aqui enviamos puntaje hacia Backend
 	}
 }
 
