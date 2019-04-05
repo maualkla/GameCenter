@@ -15,7 +15,7 @@ $user = $_POST['user'];
 
 
 // Validating params
-if(gettype($record) == integer)
+if((int)$record)
 {
 	$record = intval($record);
 	if(strlen($user) < 3)
