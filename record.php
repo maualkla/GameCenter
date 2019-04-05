@@ -13,7 +13,7 @@ $game = $_REQUEST['game'];
 $record = $_REQUEST['record'];
 $user = $_REQUEST['user'];
 
-echo " : ".$operation." : ".$game." : ".$record." : ".$user;
+echo "DATA : ".$operation." : ".$game." : ".$record." : ".$user;
 
 
 // Conexion
@@ -67,6 +67,7 @@ if($operation == "1")
 	{
 		//create query
 		$sql = 'INSERT INTO records (game, record, user) VALUES ("'.$game.'", "'.$record.'", "'.$user.'")';
+		echo " Query:: ".$sql;
 		//execute query
 		$insersion = mysqli_query($dbc, $sql) or die ("Error insertando record (205): ".mysqli_error($dbc));
 		//show response
