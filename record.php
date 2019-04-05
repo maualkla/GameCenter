@@ -1,12 +1,14 @@
 <?php
 
 // Defining variables
+$operation = "";
 $game = "";
 $record = "";
 $user = "";
 $final = 0;
 
 // Getting params
+$operation = $_POST['operation'];
 $game = $_POST['game'];
 $record = $_POST['record'];
 $user = $_POST['user'];
