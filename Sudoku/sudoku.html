@@ -38,15 +38,15 @@
 				if(finHour != initHour)
 				{
 					record = (finHour - initHour) * 3600;
-					record = (finMin - initMin) * 60;
-					record = finSec - initSec;
+					record += (finMin - initMin) * 60;
+					record += finSec - initSec;
 				}
 				else
 				{
 					if(finMin != initMin)
 					{
 						record = (finMin - initMin) * 60;
-						record = finSec - initSec;
+						record += finSec - initSec;
 					}
 					else
 					{

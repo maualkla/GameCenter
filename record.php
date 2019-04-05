@@ -47,7 +47,7 @@ if($operation == "1")
 	if(gettype($record) == "integer")
 	{
 		$record = intval($record);
-		if(strlen($user) < 3)
+		if(strlen($user) < 3 || $user == null)
 		{
 			$final = 1;
 			echo ' ERROR: No se puto validar el nombre de usuario.';
@@ -83,12 +83,14 @@ if($operation == "1")
 		{
 			header('Location: index.html');
 		}
+		mysqli_close($dbc);
 		
 	}
 }
 elseif($operation == "2")
 {
 	$dbc = conexion();
+	mysqli_close($dbc);
 }
 else
 {
@@ -103,7 +105,7 @@ else
 // Notifing record
 
 // Redirect to page
-mysqli_close($dbc);
+
 ?>
 
 <!DOCTYPE html>
