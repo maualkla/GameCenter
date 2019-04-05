@@ -73,7 +73,7 @@ if($operation == "1")
 		//show response
 		if($game == "1")
 		{
-			header('Location: 5inLine/5inline.html');
+			header('Location: 5inLine/5inline.php');
 		}
 		elseif($game == "2")
 		{
