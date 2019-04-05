@@ -52,7 +52,7 @@ function upLevel()
 	{
 		console.log(" Game Over ");
 		alert(" You Win! ");
-		//sendRecord
+		sendRecord();
 	}
 }
 
@@ -60,13 +60,13 @@ function restartLevel()
 {
 	alert(" Sorry you lost ");
 	nivel = 1;
-	//sendRecord	
+	sendRecord();	
 }
 
 function sendRecord()
 {
 	//Aqui enviamos el record.
-	var user= prompt("Please enter your name", "");
+	var user= prompt("Game Over, please enter your name for the records", "");
 	window.location.href = "../record.php?operation=1&game=1&record=" + puntos[0] + "&user=" + user;
 }
 

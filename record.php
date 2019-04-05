@@ -76,7 +76,7 @@ if($operation == "1")
 		}
 		elseif($game == "2")
 		{
-			header('Location: Sudoku/sudoku.html');
+			//header('Location: Sudoku/sudoku.html');
 		}
 		else
 		{

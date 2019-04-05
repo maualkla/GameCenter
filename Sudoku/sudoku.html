@@ -12,9 +12,38 @@
 			var puzzle;
 			var selectedTile;
 			var r, c;
+			var initHour, initMin, initSec, finHour, finMin, finSec;
+			function timeInit()
+			{
+				var time = new Date();
+				console.log(time);
+				initHour = time.getHours();
+				initMin = time.getMinutes();
+				initSec = time.getSeconds();
+			}
+
+			function timeFinish()
+			{
+				var time = new Date();
+				finHour = time.getHours();
+				finMin = time.getMinutes();
+				finSec = time.getSeconds();
+				var record = ((finHour - initHour)*3600) + (((60 - initMin) + finMin)*60) + (60 - initSec) + (finSec);
+				if(record >= 1000)
+				{
+					console.log(" Entro a / 60 ");
+					record = record / 1000;
+					//record = record / 60;
+				}
+				record = Number((record).toFixed(2));
+				console.log(record);
+				var user = prompt("Game Over, please enter your name for the records", "");
+				window.location.href = "../record.php?operation=2&game=1&record=" + record + "&user=" + user; 
+			}
 
 			$(document).ready(function() {
 				init();
+				timeInit();
 				$("#grid").fadeIn(500);
 				$(".emptyCell").click(function(e) {
 					r = selectedTile.getAttribute('id').charAt(1);
@@ -95,6 +124,7 @@
 						}
 					}
 					$(".winScreen").fadeIn(100);
+					timeFinish();
 					return;
 				}
 			}
