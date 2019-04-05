@@ -28,10 +28,21 @@ if(gettype($record) == "integer")
 	else
 	{
 		echo " Everything is fine creando conexion...";
-		$dbc = mysqli_connect("127.0.0.1:3306","root","","records");
+		$realHost = "sql208.epizy.com:3306";
+		$realUser = "epiz_23620501";
+		$realPass = "Ajedrez101";
+		$localHost = "127.0.0.1:3306";
+		$localUser = "root";
+		$localPass = "";
+
+		$dbc = mysqli_connect($localHost,$localUser,$localPass,"records");
     	if (!$dbc) 
     	{
         	die("Error de conexion: " . mysqli_connect_error());
+    	}
+    	else
+    	{
+    		//echo " Conexion exitosa!!!";
     	}
 	}
 }
@@ -65,6 +76,6 @@ mysqli_close($dbc);
 	<title> GAMECENTER BACKEND </title>
 </head>
 <body>
-	
+
 </body>
 </html>
