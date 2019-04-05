@@ -70,6 +70,19 @@ if($operation == "1")
 		//execute query
 		$insersion = mysqli_query($dbc, $sql) or die ("Error insertando record (205): ".mysqli_error($dbc));
 		//show response
+		if($game == "1")
+		{
+			header('Location: 5inLine/5inline.html');
+		}
+		elseif($game == "2")
+		{
+			header('Location: Sudoku/sudoku.html');
+		}
+		else
+		{
+			header('Location: index.html');
+		}
+		
 	}
 }
 elseif($operation == "2")
