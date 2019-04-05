@@ -27,7 +27,12 @@ if(gettype($record) == "integer")
 	}
 	else
 	{
-		echo " Everything is fine...";
+		echo " Everything is fine creando conexion...";
+		$dbc = mysqli_connect("127.0.0.1:3306","root","","records");
+    	if (!$dbc) 
+    	{
+        	die("Error de conexion: " . mysqli_connect_error());
+    	}
 	}
 }
 else
@@ -40,7 +45,7 @@ else
 if($final == 0)
 {
 	//conncect
-	$sql = 'INSERT INTO records (games, record, user) VALUES ("'.$game.'", "'.$record.'", "'.$user.'")';
+	$sql = 'INSERT INTO records (game, record, user) VALUES ("'.$game.'", "'.$record.'", "'.$user.'")';
 	//execute query
 	//show response
 }
@@ -51,5 +56,15 @@ if($final == 0)
 // Notifing record
 
 // Redirect to page
-
+mysqli_close($dbc);
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> GAMECENTER BACKEND </title>
+</head>
+<body>
+	
+</body>
+</html>
