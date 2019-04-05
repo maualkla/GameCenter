@@ -41,7 +41,6 @@ function conexion()
 
 if($operation == "1")
 {
-	$dbc = conexion();
 	// Validating params
 	$record = intval($record);
 	echo " TYPE : ".gettype($record);
@@ -56,6 +55,7 @@ if($operation == "1")
 		else
 		{
 			//success
+			$dbc = conexion();
 		}
 	}
 	else
