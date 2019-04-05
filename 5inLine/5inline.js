@@ -51,14 +51,21 @@ function upLevel()
 	if(nivel == 11)
 	{
 		console.log(" Juego terminado. ");
-		alert(" GAME OVER ");
+		alert(" Has ganado! ");
 	}
 }
 
 function restartLevel() 
 {
-	alert(" GAME OVER ");
+	alert(" De regreo al nivel 1 ");
 	nivel = 1;
+}
+
+function sendRecord()
+{
+	//Aqui enviamos el record.
+	var user= prompt("Please enter your name", "");
+	window.location.href = "../record.php?operation=1&game=1&record=" + puntos[0] + "_" + puntos[1] +"&user=" + user;
 }
 
 function preparar(){

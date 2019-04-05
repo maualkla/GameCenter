@@ -13,6 +13,7 @@ $game = $_POST['game'];
 $record = $_POST['record'];
 $user = $_POST['user'];
 
+
 // Validating params
 if(gettype($record) == integer)
 {
@@ -37,6 +38,9 @@ if($final == 0)
 	//execute query
 	//show response
 }
+
+// Display records
+
 
 // Notifing record
 
