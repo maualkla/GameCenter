@@ -50,22 +50,24 @@ function upLevel()
 	nivel++;
 	if(nivel == 11)
 	{
-		console.log(" Juego terminado. ");
-		alert(" Has ganado! ");
+		console.log(" Game Over ");
+		alert(" You Win! ");
+		//sendRecord
 	}
 }
 
 function restartLevel() 
 {
-	alert(" De regreo al nivel 1 ");
+	alert(" Sorry you lost ");
 	nivel = 1;
+	//sendRecord	
 }
 
 function sendRecord()
 {
 	//Aqui enviamos el record.
 	var user= prompt("Please enter your name", "");
-	window.location.href = "../record.php?operation=1&game=1&record=" + puntos[0] + "_" + puntos[1] +"&user=" + user;
+	window.location.href = "../record.php?operation=1&game=1&record=" + puntos[0] + "&user=" + user;
 }
 
 function preparar(){
