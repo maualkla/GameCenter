@@ -108,7 +108,9 @@ mysqli_close($dbc);
 <!DOCTYPE html>
 <html>
 <head>
-	<title> GAMECENTER BACKEND </title>
+	<link rel="shortcut icon" href="Assets/bitmap.png" />
+	<link rel="stylesheet" href="index.css" />
+	<title> GameCenter Backend </title>
 </head>
 <body>
 
