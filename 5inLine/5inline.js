@@ -52,7 +52,7 @@ function upLevel()
 	{
 		console.log(" Game Over ");
 		alert(" You Win! ");
-		//sendRecord
+		sendRecord();
 	}
 }
 
@@ -60,7 +60,7 @@ function restartLevel()
 {
 	alert(" Sorry you lost ");
 	nivel = 1;
-	//sendRecord	
+	sendRecord();	
 }
 
 function sendRecord()
