@@ -13,6 +13,7 @@
 			var selectedTile;
 			var r, c;
 			var initHour, initMin, initSec, finHour, finMin, finSec;
+			
 			function timeInit()
 			{
 				var time = new Date();
@@ -20,6 +21,7 @@
 				initHour = time.getHours();
 				initMin = time.getMinutes();
 				initSec = time.getSeconds();
+				console.log(initHour + " : " + initMin + " : " + initSec);
 			}
 
 			function timeFinish()
@@ -28,7 +30,29 @@
 				finHour = time.getHours();
 				finMin = time.getMinutes();
 				finSec = time.getSeconds();
-				var record = ((finHour - initHour)*3600) + (((60 - initMin) + finMin)*60) + (60 - initSec) + (finSec);
+				console.log(finHour + " : " + finMin + " : " + finSec);
+
+				var record = 1;
+				if(finHour != initHour)
+				{
+					record = (finHour - initHour) * 3600;
+					record = (finMin - initMin) * 60;
+					record = finSec - initSec;
+				}
+				else
+				{
+					if(finMin != initMin)
+					{
+						record = (finMin - initMin) * 60;
+						record = finSec - initSec;
+					}
+					else
+					{
+						record = finSec - initSec;
+					}
+				}
+				
+				console.log(" RECORD : " + record);
 				if(record >= 1000)
 				{
 					console.log(" Entro a / 60 ");
