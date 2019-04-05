@@ -54,6 +54,10 @@ if($operation == "1")
 		}
 		else
 		{
+			if($user == "null")
+			{
+				$user = "Anonym User";
+			}
 			//success
 			$dbc = conexion();
 		}
@@ -73,11 +77,11 @@ if($operation == "1")
 		//show response
 		if($game == "1")
 		{
-			header('Location: 5inLine/5inline.php');
+			header('Location: 5inLine/5inline.php?svd=1');
 		}
 		elseif($game == "2")
 		{
-			//header('Location: Sudoku/sudoku.html');
+			//header('Location: Sudoku/sudoku.html?svd=1');
 		}
 		else
 		{
@@ -85,6 +89,21 @@ if($operation == "1")
 		}
 		mysqli_close($dbc);
 		
+	}
+	else
+	{
+		if($game == "1")
+		{
+			header('Location: 5inLine/5inline.php?svd=2');
+		}
+		elseif($game == "2")
+		{
+			//header('Location: Sudoku/sudoku.html?svd=2');
+		}
+		else
+		{
+			header('Location: index.html');
+		}
 	}
 }
 elseif($operation == "2")
