@@ -1,7 +1,7 @@
 body
 {
-	background-color: #33334d;
-	font-family: sans-serif;
+	background-color: white;/*#33334d;*/
+	font-family: arial;
 	z-index: 0;
 }
 .container-head
@@ -101,7 +101,7 @@ body
 
 #label
 {
-	color: white;
+	color: yellow;
 
 }
 video

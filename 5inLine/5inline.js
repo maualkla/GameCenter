@@ -50,15 +50,24 @@ function upLevel()
 	nivel++;
 	if(nivel == 11)
 	{
-		console.log(" Juego terminado. ");
-		alert(" GAME OVER ");
+		console.log(" Game Over ");
+		alert(" You Win! ");
+		//sendRecord
 	}
 }
 
 function restartLevel() 
 {
-	alert(" GAME OVER ");
+	alert(" Sorry you lost ");
 	nivel = 1;
+	//sendRecord	
+}
+
+function sendRecord()
+{
+	//Aqui enviamos el record.
+	var user= prompt("Please enter your name", "");
+	window.location.href = "../record.php?operation=1&game=1&record=" + puntos[0] + "&user=" + user;
 }
 
 function preparar(){
@@ -153,15 +162,23 @@ function cambiarColorFlecha(evento){
 }
 
 function mostrarPuntos(){
-	document.getElementById("puntosHumano").innerHTML = puntos[0];
-	document.getElementById("puntosIA").innerHTML = puntos[1];
-	if (puntos[0] >= OBJETIVO){
-		alert("Tú ganas Humano... por ahora");
-		location.reload();
+	if((puntos[0] + puntos[1]) != 10)
+	{
+		document.getElementById("puntosHumano").innerHTML = puntos[0];
+		document.getElementById("puntosIA").innerHTML = puntos[1];
+		if (puntos[0] >= OBJETIVO){
+			alert("Tú ganas Humano... por ahora");
+			location.reload();
+		}
+		if (puntos[1] >= OBJETIVO){
+			alert("Te he ganado (como era de esperar) :)");
+			location.reload();
+		}
 	}
-	if (puntos[1] >= OBJETIVO){
-		alert("Te he ganado (como era de esperar) :)");
-		location.reload();
+	else
+	{
+		alert(" MARCADOR " + puntos[0] + " A " + puntos[1])
+		// Aqui enviamos puntaje hacia Backend
 	}
 }
 
