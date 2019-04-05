@@ -14,6 +14,7 @@
 			var r, c;
 			var initHour, initMin, initSec, finHour, finMin, finSec;
 			
+			/* Funcion time init para saber cuando comenzo a jugar */
 			function timeInit()
 			{
 				var time = new Date();
@@ -24,6 +25,7 @@
 				console.log(initHour + " : " + initMin + " : " + initSec);
 			}
 
+			/* Funcion para calcular cuanto tiempo duro la partida */
 			function timeFinish()
 			{
 				var time = new Date();
@@ -62,7 +64,7 @@
 				record = Number((record).toFixed(2));
 				console.log(record);
 				var user = prompt("Game Over, please enter your name for the records", "");
-				window.location.href = "../record.php?operation=2&game=1&record=" + record + "&user=" + user; 
+				window.location.href = "../record.php?operation=2&game=2&record=" + record + "&user=" + user; 
 			}
 
 			$(document).ready(function() {
