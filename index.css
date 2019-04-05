@@ -148,3 +148,11 @@ video
 	color: #62635D;
 	padding: 20px;
 }
+
+.error-tag
+{
+	padding: 10px;
+	background-color: yellow;
+	border: none; border-radius: 10px;
+	color: black; font-size: 90%; text-decoration: underline; text-align: center;
+}

@@ -1,5 +1,14 @@
-<?php
 
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="Assets/bitmap.png" />
+	<link rel="stylesheet" href="index.css" />
+	<title> GameCenter Backend </title>
+</head>
+<body>
+	<div class="error-tag">
+<?php
 // Defining variables
 $operation = "";
 $game = "";
@@ -50,7 +59,7 @@ if($operation == "1")
 		if(strlen($user) < 3 || $user == null)
 		{
 			$final = 1;
-			echo ' ERROR: No se puto validar el nombre de usuario.';
+			echo ' ERROR: No se pudo validar el nombre de usuario.';
 		}
 		else
 		{
@@ -126,15 +135,9 @@ else
 // Redirect to page
 
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="shortcut icon" href="Assets/bitmap.png" />
-	<link rel="stylesheet" href="index.css" />
-	<title> GameCenter Backend </title>
-</head>
-<body>
-
+	
+	</div>
+	<h3>GameCenter</h3>
+	<h6>HERE'S WHERE THE MAGIC COMES TRUE</h6>
 </body>
 </html>
