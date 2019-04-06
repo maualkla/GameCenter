@@ -1,5 +1,14 @@
-<?php
 
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="Assets/bitmap.png" />
+	<link rel="stylesheet" href="index.css" />
+	<title> GameCenter Backend </title>
+</head>
+<body>
+	<div class="error-tag">
+<?php
 // Defining variables
 $operation = "";
 $game = "";
@@ -13,7 +22,7 @@ $game = $_REQUEST['game'];
 $record = $_REQUEST['record'];
 $user = $_REQUEST['user'];
 
-echo " : ".$operation." : ".$game." : ".$record." : ".$user;
+echo "DATA : ".$operation." : ".$game." : ".$record." : ".$user;
 
 
 // Conexion
@@ -47,13 +56,17 @@ if($operation == "1")
 	if(gettype($record) == "integer")
 	{
 		$record = intval($record);
-		if(strlen($user) < 3)
+		if(strlen($user) < 3 || $user == null)
 		{
 			$final = 1;
-			echo ' ERROR: No se puto validar el nombre de usuario.';
+			echo ' ERROR: No se pudo validar el nombre de usuario.';
 		}
 		else
 		{
+			if($user == "null")
+			{
+				$user = "Anonym User";
+			}
 			//success
 			$dbc = conexion();
 		}
@@ -67,27 +80,46 @@ if($operation == "1")
 	{
 		//create query
 		$sql = 'INSERT INTO records (game, record, user) VALUES ("'.$game.'", "'.$record.'", "'.$user.'")';
+		echo " Query:: ".$sql;
 		//execute query
 		$insersion = mysqli_query($dbc, $sql) or die ("Error insertando record (205): ".mysqli_error($dbc));
 		//show response
 		if($game == "1")
 		{
-			header('Location: 5inLine/5inline.html');
+			header('Location: 5inLine/5inline.php?svd=1');
 		}
 		elseif($game == "2")
 		{
-			//header('Location: Sudoku/sudoku.html');
+			//header('Location: Sudoku/sudoku.html?svd=1');
 		}
 		else
 		{
 			header('Location: index.html');
 		}
+		mysqli_close($dbc);
 		
+	}
+	else
+	{
+		if($game == "1")
+		{
+			header('Location: 5inLine/5inline.php?svd=2');
+		}
+		elseif($game == "2")
+		{
+			//header('Location: Sudoku/sudoku.html?svd=2');
+		}
+		else
+		{
+			header('Location: index.html');
+		}
 	}
 }
 elseif($operation == "2")
 {
+	// Under construction
 	$dbc = conexion();
+	mysqli_close($dbc);
 }
 else
 {
@@ -102,15 +134,12 @@ else
 // Notifing record
 
 // Redirect to page
-mysqli_close($dbc);
+
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title> GAMECENTER BACKEND </title>
-</head>
-<body>
-
+	
+	</div>
+	<h2 style="text-align: center;">GameCenter</h3>
+	<h4 style="text-align: center;">HERE'S WHERE THE MAGIC COMES TRUE</h6>
+	<button class="button-white" onclick="window.location.href = 'index.html';"> Inicio </button>
 </body>
 </html> 
