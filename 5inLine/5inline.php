@@ -13,17 +13,26 @@
 		<div class="mega">
 
 			<div class="top-page">
-				
-				<img src="../Assets/5inline.png">
-				<h1 id="level">LEVEL </h1>
-				<p><strong>Human: </strong><span id="puntosHumano"></span></p>
-				<p><strong>AI: </strong><span id="puntosIA"></span></p>
-				<p id="pResultado">
-					<span id="spanResultado"></span>
-					<button type="button" class="btn" id="btnSiguiente" >Next Game</button>
-				</p>
+				<div class="top-upper">
+					<img src="../Assets/5inline.png">
+					<h1 id="level">LEVEL </h1>
+					<p><strong>Human: </strong><span id="puntosHumano"></span></p>
+					<p><strong>AI: </strong><span id="puntosIA"></span></p>
+					<p id="pResultado">
+						<span id="spanResultado"></span>
+						<button type="button" class="btn" id="btnSiguiente" >Next Game</button>
+					</p>
 
-				<button onclick='window.location.href = "../index.html"' id="scape-btn"> Back to GameCenter</button>
+					<button onclick='window.location.href = "../index.html"' id="scape-btn"> Back to GameCenter</button>
+				</div>
+				<div class="records">
+					<div class="record-title">Top Records</div>
+					<div class="record-content">
+						<?php
+							
+						?>
+					</div>
+				</div>
 			</div>
 			
 			<div class="content">
