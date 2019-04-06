@@ -141,6 +141,18 @@ video
 	background-color: #131339;
 	border: solid 2px white; 
 }
+.button-white
+{
+	cursor: pointer;
+	padding: 10px;
+	color: black; text-align: center; font-size: 120%;
+	border:none; border-radius: 5px;
+	background-color: gray;
+}
+.button-white:hover
+{
+
+}
 .titulo
 {
 	border: solid black 1px; border-radius: 5px;

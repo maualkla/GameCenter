@@ -139,5 +139,6 @@ else
 	</div>
 	<h2 style="text-align: center;">GameCenter</h3>
 	<h4 style="text-align: center;">HERE'S WHERE THE MAGIC COMES TRUE</h6>
+	<button class="button-white"> Inicio </button>
 </body>
 </html>
