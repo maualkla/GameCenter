@@ -117,6 +117,7 @@ if($operation == "1")
 }
 elseif($operation == "2")
 {
+	// Under construction
 	$dbc = conexion();
 	mysqli_close($dbc);
 }
