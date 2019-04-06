@@ -26,7 +26,7 @@
 					<button onclick='window.location.href = "../index.html"' id="scape-btn"> Back to GameCenter</button>
 				</div>
 				<div class="records">
-					<div class="record-title">Top Records</div>
+					<div class="record-title">Top 10</div>
 					<div class="record-content">
 						<?php
 							
