@@ -55,7 +55,28 @@ svg rect{
 	margin: 0% 0%;
 	text-align: center; color: #4C504F;
 	background-color: #688AC4;
+	display: grid; grid-template-columns: 1fr; grid-template-rows: 3fr 1fr;
+}
+.records
+{
+	font-size: 80%;
+	padding: 10px 2px;
+	background-color: white;
+	border: none; border-radius: 3px;
+	height: 100%; width: 88%;
+	margin-left: 6%; margin-top: -30%;
+	overflow-y: scroll;
+	display: grid; grid-template-rows: 1fr 9fr; grid-template-columns: auto;
+	opacity: .8;
+}
+.record-title
+{
 
+}
+.record-content
+{
+	text-align: left;
+	padding: 1px 3px;
 }
 button
 {

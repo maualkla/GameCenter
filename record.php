@@ -142,4 +142,4 @@ else
 	<h4 style="text-align: center;">HERE'S WHERE THE MAGIC COMES TRUE</h6>
 	<button class="button-white" onclick="window.location.href = 'index.html';"> Inicio </button>
 </body>
-</html>
+</html> 
