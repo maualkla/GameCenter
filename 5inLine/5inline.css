@@ -67,6 +67,7 @@ svg rect{
 	margin-left: 6%; margin-top: -30%;
 	overflow-y: scroll;
 	display: grid; grid-template-rows: 1fr 9fr; grid-template-columns: auto;
+	opacity: .8;
 }
 .record-title
 {
@@ -74,7 +75,8 @@ svg rect{
 }
 .record-content
 {
-	
+	text-align: left;
+	padding: 1px 3px;
 }
 button
 {

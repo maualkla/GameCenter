@@ -30,6 +30,34 @@
 					<div class="record-content">
 						<?php
 							
+							function conexion()
+							{
+								//echo " Everything is fine creando conexion...";
+								$realHost = "sql208.epizy.com:3306";
+								$realUser = "epiz_23620501";
+								$realPass = "Ajedrez101";
+								$localHost = "127.0.0.1:3306";
+								$localUser = "root";
+								$localPass = "";
+								$dbc = mysqli_connect($localHost,$localUser,$localPass,"records");
+								if (!$dbc) 
+								{
+									die("Error de conexion: " . mysqli_connect_error());
+								}
+								else
+								{
+									//echo " Conexion exitosa!!!";
+								}
+								return $dbc;
+							}
+
+							$dbc = conexion();
+							$sql = 'SELECT * FROM records WHERE game = "1" ORDER BY record DESC limit 10';
+							$query = mysqli_query($dbc, $sql) or die (" Error, no se recuperaron los records. ".mysqli_error($dbc));
+							while($row = mysqli_fetch_array($query)) 
+						    {
+						       echo $row['user'].'   >>  '.$row['record'].'<br>';
+						    }
 						?>
 					</div>
 				</div>
