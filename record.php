@@ -137,7 +137,7 @@ else
 ?>
 	
 	</div>
-	<h3>GameCenter</h3>
-	<h6>HERE'S WHERE THE MAGIC COMES TRUE</h6>
+	<h2 style="text-align: center;">GameCenter</h3>
+	<h4 style="text-align: center;">HERE'S WHERE THE MAGIC COMES TRUE</h6>
 </body>
 </html>
