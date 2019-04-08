@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
+		<script type="text/javascript">
+	 		var url = new URL(window.location.href);
+	 		var param = url.searchParams.get("svd");
+	 		if(svd == 1)
+	 		{
+	 			alert(" Record Saved ");
+	 		}
+	 	</script>
 		<title>Sudoku Party!</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="shortcut icon" href="../Assets/sdk.png" />
