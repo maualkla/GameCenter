@@ -131,9 +131,9 @@ else
 	// Display records
 
 
-// Notifing record
+	// Notifing record
 
-// Redirect to page
+	// Redirect to page
 
 ?>
 	
