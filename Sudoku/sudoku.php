@@ -339,7 +339,7 @@
 							}
 
 							$dbc = conexion();
-							$sql = 'SELECT * FROM records WHERE game = "1" ORDER BY record DESC limit 10';
+							$sql = 'SELECT * FROM records WHERE game = "2" ORDER BY record DESC limit 10';
 							$query = mysqli_query($dbc, $sql) or die (" Error, no se recuperaron los records. ".mysqli_error($dbc));
 							while($row = mysqli_fetch_array($query)) 
 						    {

@@ -107,7 +107,7 @@ if($operation == "1")
 		}
 		elseif($game == "2")
 		{
-			//header('Location: Sudoku/sudoku.html?svd=2');
+			header('Location: Sudoku/sudoku.php?svd=2');
 		}
 		else
 		{
